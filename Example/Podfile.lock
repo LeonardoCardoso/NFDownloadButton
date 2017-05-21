@@ -1,0 +1,16 @@
+PODS:
+  - NFDownloadButton (0.0.1)
+
+DEPENDENCIES:
+  - NFDownloadButton (from `../`)
+
+EXTERNAL SOURCES:
+  NFDownloadButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NFDownloadButton: e6b8ad1436d604d51cdfb6a45b5e18e2f6b813a2
+
+PODFILE CHECKSUM: 530a3725153e9bc2c9c73f1fbdd2b875d864c460
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-bn-Yed" customClass="NFDownloadButton" customModule="NFDownloadButton">
+                                <rect key="frame" x="67" y="55" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="62h-vb-eic"/>
+                                    <constraint firstAttribute="width" constant="240" id="ex6-ZB-2oo"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WVj-8Y-qE0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyF-FO-cnZ" customClass="NFDownloadButton" customModule="NFDownloadButton">
+                                <rect key="frame" x="67" y="315" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="65M-jJ-aC4"/>
+                                    <constraint firstAttribute="height" constant="100" id="iYm-Df-gbK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="initialColor">
+                                        <color key="value" red="0.98823529409999999" green="0.18823529410000001" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="downloadColor">
+                                        <color key="value" red="0.28255574" green="0.92779296870000005" blue="0.36625277290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="deviceColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="macOS"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaQ-BV-Y25"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gL1-Q5-jSX" customClass="NFDownloadButton" customModule="NFDownloadButton">
+                                <rect key="frame" x="188" y="318" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.048367679530563965" green="0.03394341626213597" blue="0.24972656250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MNC-72-6SP"/>
+                                    <constraint firstAttribute="width" constant="50" id="cAM-ML-3U0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="initialColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="downloadColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="deviceColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="tvOS"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KoE-S6-cRa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MC-yt-SJn" customClass="NFDownloadButton" customModule="NFDownloadButton">
+                                <rect key="frame" x="193" y="373" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aYl-Zi-04u"/>
+                                    <constraint firstAttribute="width" constant="40" id="w96-j1-G4f"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDownloaded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="initialColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="downloadColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="deviceColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="watchOS"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ckl-Gl-Edn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oyF-FO-cnZ" firstAttribute="top" secondItem="xh0-bn-Yed" secondAttribute="bottom" constant="20" id="14U-jM-k8Y"/>
+                            <constraint firstItem="oyF-FO-cnZ" firstAttribute="leading" secondItem="xh0-bn-Yed" secondAttribute="leading" id="TMe-4M-V6X"/>
+                            <constraint firstItem="7MC-yt-SJn" firstAttribute="centerX" secondItem="gL1-Q5-jSX" secondAttribute="centerX" id="asl-jE-079"/>
+                            <constraint firstItem="xh0-bn-Yed" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iJJ-mM-9V5"/>
+                            <constraint firstItem="gL1-Q5-jSX" firstAttribute="top" secondItem="xh0-bn-Yed" secondAttribute="bottom" constant="23" id="n2f-pd-ofP"/>
+                            <constraint firstItem="gL1-Q5-jSX" firstAttribute="leading" secondItem="oyF-FO-cnZ" secondAttribute="trailing" constant="21" id="ofZ-xI-4Gf"/>
+                            <constraint firstItem="xh0-bn-Yed" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="v8s-FB-rF0"/>
+                            <constraint firstItem="7MC-yt-SJn" firstAttribute="top" secondItem="gL1-Q5-jSX" secondAttribute="bottom" constant="5" id="zdh-cy-yXO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iOSDownloadButton" destination="xh0-bn-Yed" id="33m-cA-cZR"/>
+                        <outlet property="macOSDownloadButton" destination="oyF-FO-cnZ" id="KR8-kn-dLk"/>
+                        <outlet property="tvOSDownloadButton" destination="gL1-Q5-jSX" id="LOH-lg-kU6"/>
+                        <outlet property="watchOSDownloadButton" destination="7MC-yt-SJn" id="Sdi-MH-pTM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
