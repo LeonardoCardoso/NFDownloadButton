@@ -5,7 +5,7 @@
 | ![iOS](Images/iOS.gif) | ![watchOS](Images/watchOS.gif) | ![tvOS](Images/tvOS.gif)  | ![macOS](Images/macOS.gif) |
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#requirements-and-details)
-[![CocoaPods](https://img.shields.io/badge/pod-v0.0.1-red.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#cocoapods)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.0.2-red.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#cocoapods)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#carthage)
 
 > Revamped Download Button
@@ -31,7 +31,7 @@
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build NFDownloadButton 0.0.1+.
+> CocoaPods 1.1.0+ is required to build NFDownloadButton 0.0.2+.
 
 To integrate NFDownloadButton into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
@@ -40,7 +40,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'NFDownloadButton', '~> 0.0.1'
+pod 'NFDownloadButton', '~> 0.0.2'
 ```
 
 Then, run the following command:
@@ -63,7 +63,7 @@ $ brew install carthage
 To integrate NFDownloadButton into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "LeonardoCardoso/NFDownloadButton" ~> 0.0.1
+github "LeonardoCardoso/NFDownloadButton" ~> 0.0.2
 ```
 
 ### Manually
@@ -72,12 +72,11 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 ## Usage
 
-You can use a `NFDownloadButton` on [Storyboards](#storyboard) or, if you want to do it programatically, you can create it just like you create a UIView:
+You can use a `NFDownloadButton` on [Storyboards](#storyboard) or, if you want to do it programatically, you can create it just like you create a UIButton:
 
 ```swift
 let downloadButton = NFDownloadButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
 self.parentView.addSubview(downloadButton)
-downloadButton.draw() // <- don't forget to call this function
 ```
 
 `NFDownloadButton` has four states:
@@ -155,7 +154,7 @@ protocol NFDownloadButtonDelegate {
 }
 ```
 
-### Interface Builder / Storyboard
+### Storyboard
 
 Last but not least, you can customize `NFDownloadButton` properties right from Interface Builder or Storyboards. 
 

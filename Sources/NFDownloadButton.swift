@@ -1048,7 +1048,7 @@ open class Palette {
     var downloadColor: UIColor = UIColor(red: 0.145, green: 0.439, blue: 0.733, alpha: 1.000)
     var deviceColor: UIColor = UIColor(red: 0.145, green: 0.439, blue: 0.733, alpha: 1.000)
 
-    init(initialColor: UIColor? = nil, rippleColor: UIColor? = nil, buttonBackgroundColor: UIColor? = nil, downloadColor: UIColor? = nil, deviceColor: UIColor? = nil) {
+    public init(initialColor: UIColor? = nil, rippleColor: UIColor? = nil, buttonBackgroundColor: UIColor? = nil, downloadColor: UIColor? = nil, deviceColor: UIColor? = nil) {
 
         self.initialColor = initialColor ?? self.initialColor
         self.rippleColor = rippleColor ?? self.rippleColor
@@ -1115,7 +1115,7 @@ class NFDownloadButtonLayer: CALayer {
 
     required init?(coder aDecoder: NSCoder) {
 
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
 
     }
 
@@ -1266,6 +1266,47 @@ open class NFDownloadButton: UIButton {
 
     }
 
+    override open class var layerClass: AnyClass {
+
+        return NFDownloadButtonLayer.self
+
+    }
+
+    // MARK: - Initializers
+    override init(frame: CGRect) {
+
+        super.init(frame: frame)
+
+        draw()
+
+    }
+
+    public init(frame: CGRect, isDownloaded: Bool = false, style: NFDownloadButtonStyle = .iOS, palette: Palette = Palette()) {
+
+        super.init(frame: frame)
+
+        self.isDownloaded = isDownloaded
+        self.buttonStyle = style
+        self.palette = palette
+
+        draw()
+
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+
+        super.init(coder: aDecoder)
+
+    }
+    
+    // MARK: - Lifecyle
+    override open func awakeFromNib() {
+        
+        draw()
+        
+    }
+
+
     // MARK: - Properties
     var keyPath: String = "toDownloadManipulable"
     var palette: Palette = Palette()
@@ -1354,44 +1395,9 @@ open class NFDownloadButton: UIButton {
 
     }
 
-    override open class var layerClass: AnyClass {
-
-        return NFDownloadButtonLayer.self
-
-    }
-
-    override init(frame: CGRect) {
-
-        super.init(frame: frame)
-
-        draw()
-
-    }
-
-    init(frame: CGRect, isDownloaded: Bool = false, style: NFDownloadButtonStyle = .iOS, palette: Palette = Palette()) {
-
-        super.init(frame: frame)
-
-        self.isDownloaded = isDownloaded
-        self.buttonStyle = style
-        self.palette = palette
-
-    }
-
-    required public init?(coder aDecoder: NSCoder) {
-
-        super.init(coder: aDecoder)
-
-    }
-
-    // MARK: - Lifecyle
-    override open func awakeFromNib() {
-
-        draw()
-
-    }
-
     override open func draw(_ layer: CALayer, in ctx: CGContext) {
+
+        super.draw(layer, in: ctx)
 
         guard
             let layer: NFDownloadButtonLayer = layer as? NFDownloadButtonLayer,
@@ -1464,7 +1470,7 @@ open class NFDownloadButton: UIButton {
         buttonStyle = buttonStyle ?? .iOS
         
         needsDisplay()
-        
+
     }
     
     func needsDisplay() {

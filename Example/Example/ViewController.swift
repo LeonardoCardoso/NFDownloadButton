@@ -23,6 +23,11 @@ class ViewController: UIViewController {
 
         super.viewDidAppear(animated)
 
+        let programmatically = NFDownloadButton(frame: CGRect(x: 10, y: 20, width: 50, height: 50))
+        programmatically.delegate = self
+        programmatically.addTarget(self, action: #selector(ViewController.changeState(_:)), for: .touchUpInside)
+        self.view.addSubview(programmatically)
+
         iOSDownloadButton.delegate = self
         watchOSDownloadButton.delegate = self
         tvOSDownloadButton.delegate = self
