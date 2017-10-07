@@ -1175,7 +1175,7 @@ public protocol NFDownloadButtonDelegate {
 open class NFDownloadButton: UIButton {
 
     // MARK: - IBDesignable and IBInspectable
-    @IBInspectable var isDownloaded: Bool = false {
+    @IBInspectable open var isDownloaded: Bool = false {
 
         willSet {
 
