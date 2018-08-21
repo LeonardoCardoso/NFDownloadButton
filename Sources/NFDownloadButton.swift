@@ -1190,7 +1190,7 @@ open class NFDownloadButton: UIButton {
 
     }
 
-    @IBInspectable var buttonBackgroundColor: UIColor? {
+    @IBInspectable open var buttonBackgroundColor: UIColor? {
 
         didSet {
 
@@ -1200,7 +1200,7 @@ open class NFDownloadButton: UIButton {
 
     }
 
-    @IBInspectable var initialColor: UIColor? {
+    @IBInspectable open var initialColor: UIColor? {
 
         didSet {
 
@@ -1210,7 +1210,7 @@ open class NFDownloadButton: UIButton {
 
     }
 
-    @IBInspectable var rippleColor: UIColor? {
+    @IBInspectable open var rippleColor: UIColor? {
 
         didSet {
 
@@ -1220,7 +1220,7 @@ open class NFDownloadButton: UIButton {
 
     }
 
-    @IBInspectable var downloadColor: UIColor? {
+    @IBInspectable open var downloadColor: UIColor? {
 
         didSet {
 
@@ -1230,7 +1230,7 @@ open class NFDownloadButton: UIButton {
 
     }
 
-    @IBInspectable var deviceColor: UIColor? {
+    @IBInspectable open var deviceColor: UIColor? {
 
         didSet {
 
@@ -1309,7 +1309,7 @@ open class NFDownloadButton: UIButton {
 
     // MARK: - Properties
     var keyPath: String = "toDownloadManipulable"
-    var palette: Palette = Palette()
+    open var palette: Palette = Palette()
     open var delegate: NFDownloadButtonDelegate?
     open var downloadPercent: CGFloat = 0.0 {
         willSet {
