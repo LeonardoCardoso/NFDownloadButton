@@ -1,9 +1,16 @@
 # Change Log
 
 #### 0.x Releases
-- `0.0.x` Releases - [0.0.1](#001) | [0.0.2](#002) | [0.0.3](#003)
+- `0.0.x` Releases - [0.0.1](#001) | [0.0.2](#002) | [0.0.3](#003) | [0.0.4](#004)
 
 ---
+
+## [0.0.4](https://github.com/LeonardoCardoso/NFDownloadButton/releases/tag/0.0.4)
+Released on 2018-08-22.
+
+#### Changed
+- Open `palette`.
+  - Changed by [Jung Jihoon](https://github.com/pinddFull).
 
 ## [0.0.3](https://github.com/LeonardoCardoso/NFDownloadButton/releases/tag/0.0.3)
 Released on 2017-10-07.
