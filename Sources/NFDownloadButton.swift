@@ -1489,8 +1489,8 @@ open class NFDownloadButton: UIButton {
         let animation = CABasicAnimation(keyPath: keyPath)
         animation.beginTime = CACurrentMediaTime() + delay
         animation.duration = duration
-        animation.fillMode = kCAFillModeBoth
-        animation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
+        animation.fillMode = CAMediaTimingFillMode.both
+        animation.timingFunction = CAMediaTimingFunction.init(name: CAMediaTimingFunctionName.easeOut)
         animation.fromValue = from
         animation.toValue = to
         animation.delegate = self
