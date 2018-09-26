@@ -13,7 +13,6 @@
 		984D9B301ECF83A100C9C27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984D9B2F1ECF83A100C9C27E /* Assets.xcassets */; };
 		984D9B331ECF83A100C9C27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984D9B311ECF83A100C9C27E /* LaunchScreen.storyboard */; };
 		98FC63C31F892291003D4339 /* NFDownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC63C11F892291003D4339 /* NFDownloadButton.swift */; };
-		98FC63C41F892291003D4339 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98FC63C21F892291003D4339 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -155,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98FC63C41F892291003D4339 /* Info.plist in Resources */,
 				984D9B331ECF83A100C9C27E /* LaunchScreen.storyboard in Resources */,
 				984D9B301ECF83A100C9C27E /* Assets.xcassets in Resources */,
 				984D9B2E1ECF83A100C9C27E /* Main.storyboard in Resources */,
@@ -313,7 +311,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -326,7 +324,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
