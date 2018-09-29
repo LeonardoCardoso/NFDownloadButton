@@ -1,9 +1,16 @@
 # Change Log
 
 #### 0.x Releases
-- `0.0.x` Releases - [0.0.1](#001) | [0.0.2](#002) | [0.0.3](#003) | [0.0.4](#004) | [0.0.4](#005)
+- `0.0.x` Releases - [0.0.1](#001) | [0.0.2](#002) | [0.0.3](#003) | [0.0.4](#004) | [0.0.5](#005) | [0.0.6](#006)
 
 ---
+
+## [0.0.6](https://github.com/LeonardoCardoso/NFDownloadButton/releases/tag/0.0.6)
+Released on 2018-09-29.
+
+#### Changed
+- Back compatibility.
+  - Changed by [Leonardo Cardoso](https://github.com/LeonardoCardoso).
 
 ## [0.0.5](https://github.com/LeonardoCardoso/NFDownloadButton/releases/tag/0.0.5)
 Released on 2018-09-26.

@@ -5,7 +5,7 @@
 | ![iOS](Images/iOS.gif) | ![watchOS](Images/watchOS.gif) | ![tvOS](Images/tvOS.gif)  | ![macOS](Images/macOS.gif) |
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#requirements-and-details)
-[![CocoaPods](https://img.shields.io/badge/pod-v0.0.5-red.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#cocoapods)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.0.6-red.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#cocoapods)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/NFDownloadButton#carthage)
 
 > Revamped Download Button
@@ -17,11 +17,9 @@
 
 ## Requirements
 
-- iOS 12.0+
+- iOS 8.0+
 - Swift 4.2+
 - Xcode 10.0+
-
-> Check older releases for older iOS versions.
 
 ## Installation
 
@@ -33,7 +31,7 @@
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build NFDownloadButton 0.0.5+.
+> CocoaPods 1.1.0+ is required to build NFDownloadButton 0.0.6+.
 
 To integrate NFDownloadButton into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
@@ -42,7 +40,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'NFDownloadButton', '~> 0.0.5'
+pod 'NFDownloadButton', '~> 0.0.6'
 ```
 
 Then, run the following command:
@@ -65,7 +63,7 @@ $ brew install carthage
 To integrate NFDownloadButton into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "LeonardoCardoso/NFDownloadButton" ~> 0.0.5
+github "LeonardoCardoso/NFDownloadButton" ~> 0.0.6
 ```
 
 ### Manually
